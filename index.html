@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>BMI Calculator</title>
+
+
+       <link rel="stylesheet" type="text/css" href="style.css">
+
+  </head>
+
+  <body id="body" background="signin.jpg">
+ <form >
+     <div class="container" id="container">
+         <div class="panel">
+             <h2 class="text-center" id="h2"><strong>Check your BMI</strong></h2>
+
+             <p id="introText" class="text-center">Enter your weight and height below to check your BMI results</p>
+
+             <form>
+                 <div id="weightInput">
+                     <p id="p1">Put your weight in here (KG)</p>
+                     <div class="input-group mb-3">
+                         <div class="input-group-prepend">
+                             <!--<span class="input-group-text" id="inputGroup-sizing-default">Default</span>-->
+                         </div>
+                         <input type="text" class="form-control"
+                                aria-describedby="inputGroup-sizing-default" id="weight" type="number" pattern="[0-9]*"
+                                name="a">
+                     </div>
+                     <!--<input/>-->
+                 </div>
+                 <div id="heightInput">
+                     <p id="p2">And your height in here (CM)</p>
+                     <div class="input-group mb-3">
+                         <div class="input-group-prepend">
+                             <!--<span class="input-group-text" id="inputGroup-sizing-default">Default</span>-->
+                         </div>
+                         <input type="text" class="form-control" aria-label="Default"
+                                aria-describedby="inputGroup-sizing-default" id="height" type="number" pattern="[0-9]*"
+                                name="b">
+                     </div>
+                     <!--<input/>-->
+                 </div>
+                 <button type="button" class="btn btn-primary" onclick="calculate()">Calculate BMI</button>
+             </form>
+             <div id="results" class="text-center">Your BMI results will appear here</div>
+         </div>
+     </div>
+     <script src="index.js"></script>
+ </form>
+ </body>
+
+</html>
